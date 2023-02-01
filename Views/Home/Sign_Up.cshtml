@@ -1,0 +1,29 @@
+﻿@model User_Application.Models.Authentication
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<body align="center">
+    <h2>Sign Up</h2>
+    <form asp-action="Log_in" method="post">
+        <input type="text" placeholder="Name" asp-for="Name" required />
+        <br />
+        <br />
+
+        <input type="text" placeholder="Username" asp-for="Username" required />
+        <br />
+        <br />
+
+        <input type="email" placeholder="Email" asp-for="Email" required />
+        <br />
+        <br />
+        
+        <input type="password" placeholder="Password" asp-for="Password" required />
+        <br />
+        <br />
+        <input type="submit" value="Sign_Up" />
+    </form>
+</body>
+</html>

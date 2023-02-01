@@ -1,0 +1,15 @@
+﻿.bg-image {
+    background-image: url("https://images.pexels.com/photos/1767664/pexels-photo-1767664.jpeg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Garamond";
+}
+.pad-align {
+    margin-top: 150px;
+    margin-right: 800px;   
+    padding: 50px;
+    color : whitesmoke;
+  
+}

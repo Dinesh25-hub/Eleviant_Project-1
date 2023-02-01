@@ -1,0 +1,36 @@
+﻿@model List<User_Application.Models.Data_List>
+@{
+}
+<div class="row"><h1 class="col-11">Data..</h1><p class="col-1"><a asp-action="ExcelExport" class="btn btn-primary">Export</a></p></div>
+<table class="table">
+    <thead>
+        <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Email</th>
+        <th>PhoneNo</th>
+        <th>Salary</th>
+        <th>Address</th>
+        <th>  </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var data in Model)
+        {            
+            <tr>
+                <td>@data.Id</td>
+                <td>@data.Name</td>
+                <td>@data.Age</td>
+                <td>@data.Gender</td>
+                <td>@data.Email</td>
+                <td>@data.PhoneNo</td>
+                <td>@data.Salary</td>
+                <td>@data.Address</td>
+                <td><a href="Edit/@data.Id">Edit</a></td>
+            </tr>
+        }
+    </tbody>
+
+</table>

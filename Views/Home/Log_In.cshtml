@@ -1,0 +1,45 @@
+﻿@model User_Application.Models.Authentication
+@{
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+<link rel="stylesheet" href="~/css/StyleSheet.css">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page </title>
+</head>
+
+<body class="bg-image">
+    <div class="bg-pad">
+        
+
+        <div>
+            <h1>
+                Login <i class="bi bi-box-arrow-in-right"></i>
+            </h1>
+        </div> 
+     <br />
+        <form asp-action="Home" method="post" >
+            <div class="textbox">
+                <i class="bi bi-person"></i>
+            <input type="text" placeholder="Username" asp-for="Username" required>
+            </div>
+
+            <br />
+            <div class="textbox">
+                <i class="bi bi-key"></i>
+            <input type="password" placeholder="Password" asp-for="Password" required>
+            </div>
+            <br />
+            <input type="submit" value="Log_In" class="link-bg" />
+        </form>
+        <br />  
+
+        <a href="Home\Sign_Up" class="link-text">New User</a>
+        <br />
+        <br />
+
+        <a href="Home\Reset_Password" class="link-text" >Reset Password</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+﻿@model User_Application.Models.Query.FeedbackViewModel
+@{
+}
+
+<form asp-action="Query" asp-controller="Feedback" method="post">
+    <textarea cols="100" rows="10" asp-for="feedBack">
+        Enter the text here...
+    </textarea>
+    <br />
+    <button type="submit" class="rounded">Submit</button>
+</form>
