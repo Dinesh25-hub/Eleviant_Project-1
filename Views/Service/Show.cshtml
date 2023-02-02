@@ -1,7 +1,24 @@
 ﻿@model List<User_Application.Models.Data_List>
 @{
 }
-<div class="row"><h1 class="col-11">Data..</h1><p class="col-1"><a asp-action="ExcelExport" class="btn btn-primary">Export</a></p></div>
+<div class="row  fw-normal">
+    <h1 class="col-11"><i class="bi bi-clipboard-data"></i> Details</h1><p class="col-1"><a asp-action="ExcelExport" class="btn btn-primary">Export</a></p>
+</div>
+
+<br />
+<div class="fw-light">
+<form method="post" asp-action="Search" asp-controller="Service">
+<div class="input-group justify-content-end">
+    <div class="form-outline">
+        <input type="search" class="form-control" placeholder="Search" />
+      
+    </div>
+        <button type="Submit" class="btn btn-primary rounded btn-block">
+        <i class="bi bi-search"></i>
+    </button>
+</div>
+</form>
+<br />
 <table class="table">
     <thead>
         <tr>
@@ -34,3 +51,4 @@
     </tbody>
 
 </table>
+</div>

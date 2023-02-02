@@ -189,7 +189,11 @@ namespace User_Application.Controllers
                 }
             }
         }
+        public IActionResult Search()
+        {
 
+            return RedirectToAction("Show");
+        }
 
     }
 }
